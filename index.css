@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    color: white;
+  }
+
+  .container {
+    margin-top: 20px;
+    width: 25%;
+    text-align: center;
+    position: relative;
+  }
+  .counter {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .bar{
+    position: relative;
+  }
+  .loadingBarGround {
+    height: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .loadingBarFront {
+    height: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    width: 0%;
+    top: 0;
+    position: absolute;
+  }
+  .loadingBarStart{
+    z-index: 2;
+    width: 100%;
+    cursor: pointer;
+  }
+  .dNone{
+    display: none;
+  }
+  .largerWidth{
+    animation: largerWidth 0.5s linear normal both running;
+  }
+  
+  @keyframes largerWidth{
+    0% {
+      width: 25%;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+  .smallerWidth{
+    animation: smallerWidth 0.5s linear normal both running;
+  }
+  
+  @keyframes smallerWidth{
+    0% {
+      width: 75%;
+    }
+    100% {
+      width: 25%;
+    }
+  }
+  .container>div:nth-child(1){
+    height: 75px;
+    display: flex;
+    justify-content: center;
+  }
+  .container>div:nth-child(1) h1{
+    height: 60px;
+    width: 140px;
+    text-align: start;
+    padding-left: 50px;
+    
+  }
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    color: white;
+  }
+  
+  .container {
+    width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  .counter {
+    font-size: 40px;
+  }
+  .loadingBarGround {
+    height: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+  }
+  .loadingBarFront {
+    height: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    width: 0%;
+    position: absolute;
+  }
+   */
